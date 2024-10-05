@@ -4,12 +4,12 @@ begin
   if year mod 4 = 0 then
   begin
     if (year mod 100 = 0) and (year mod 400 = 0) then
-      
+      println('Год не высокосный! 366');
     else
-      println('Год высокосный!')
+      println('Год высокосный! 365')
   end
   else 
-    println('Год не высокосный!');
+    println('Год не высокосный! 366');
 end.
 //1)Введите год >>  10
 //Год не высокосный!
