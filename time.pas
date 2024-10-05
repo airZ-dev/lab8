@@ -3,8 +3,8 @@ begin
   var year := readInteger('Введите год >> ');
   if year mod 4 = 0 then
   begin
-    if (year mod 100 = 0) and (year mod 400 = 0) then
-      println('Год не высокосный! 366');
+    if (year mod 100 = 0) and (year mod 400 <> 0) then
+      println('Год не высокосный! 366')
     else
       println('Год высокосный! 365')
   end
